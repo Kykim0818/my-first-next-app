@@ -1,3 +1,12 @@
+### My First Next app
+
+- Next 사용 및 숙달 테스트 목적
+- App Router 사용
+- Typescript
+- TODO: css - Styled-components
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
