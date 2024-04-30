@@ -1,6 +1,46 @@
 {
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "ignorePatterns": [
+    "node_modules/"
+  ],
   "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "prettier",
     "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
     "plugin:storybook/recommended"
-  ]
+  ],
+  "rules": {
+    "import/prefer-default-export": "off", // export default 쓰라는 거 
+    "react/require-default-props": "off", // default Props 요구
+    "prettier/prettier": "off", // 공백 경고 제거
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off", // spreading 금지
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off",
+    "react/no-unescaped-entities": "off",
+    // storybook 경고 제거 
+    // https://stackoverflow.com/questions/70585870/eslint-error-storybook-react-should-be-listed-in-the-projects-dependencies
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.*",
+          "**/.storybook/**/*.*"
+        ],
+        "peerDependencies": true
+      }
+    ]
+  }
 }
