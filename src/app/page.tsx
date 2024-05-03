@@ -1,15 +1,14 @@
 import { Content } from './Content'
-import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main>
+      <div>
         <p>
           Test App&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <code>src/app/page.tsx</code>
         </p>
-        <div className={styles.content}>
+        <div>
           <Content />
         </div>
       </div>

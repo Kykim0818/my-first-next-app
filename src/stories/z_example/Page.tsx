@@ -1,7 +1,7 @@
 import React from 'react'
 
+import styled from 'styled-components'
 import { Header } from './Header'
-import './page.css'
 
 type User = {
   name: string
@@ -19,7 +19,7 @@ export const Page: React.FC = () => {
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
 
-      <section className="storybook-page">
+      <S.Section>
         <h2>Pages in Storybook</h2>
         <p>
           We recommend building UIs with a{' '}
@@ -66,7 +66,7 @@ export const Page: React.FC = () => {
           </a>
           .
         </p>
-        <div className="tip-wrapper">
+        <S.TipWrapper>
           <span className="tip">Tip</span> Adjust the width of the canvas with
           the{' '}
           <svg
@@ -84,8 +84,75 @@ export const Page: React.FC = () => {
             </g>
           </svg>
           Viewports addon in the toolbar
-        </div>
-      </section>
+        </S.TipWrapper>
+      </S.Section>
     </article>
   )
+}
+
+const S = {
+  Section: styled.section`
+    font-family: NotoSans, 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial,
+      sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 48px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    color: #333;
+
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1;
+      margin: 0 0 4px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      text-decoration: none;
+      color: #1ea7fd;
+    }
+    ul {
+      padding-left: 30px;
+      margin: 1em 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #e7fdd8;
+      color: #66bf3c;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+  `,
+  TipWrapper: styled.div`
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    svg {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin-right: 4px;
+      vertical-align: top;
+      margin-top: 3px;
+
+      path {
+        fill: #1ea7fd;
+      }
+    }
+  `,
 }

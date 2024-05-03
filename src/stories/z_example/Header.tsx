@@ -1,5 +1,5 @@
 import { Button } from '@/components/@common/Button/Button'
-import './header.css'
+import styled from 'styled-components'
 
 type User = {
   name: string
@@ -19,7 +19,7 @@ export const Header = ({
   onCreateAccount,
 }: HeaderProps) => (
   <header>
-    <div className="storybook-header">
+    <S.header>
       <div>
         <svg
           width="32"
@@ -64,6 +64,42 @@ export const Header = ({
           </>
         )}
       </div>
-    </div>
+    </S.header>
   </header>
 )
+
+const S = {
+  header: styled.div`
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    font-size: 14px;
+    margin-right: 10px;
+
+    svg {
+      display: inline-block;
+      vertical-align: top;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      margin: 6px 0 6px 10px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    button + button {
+      margin-left: 10px;
+    }
+
+    .welcome {
+      color: #333;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  `,
+}
