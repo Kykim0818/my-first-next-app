@@ -1,3 +1,5 @@
+import { Main } from './Main'
+
 export default function Page() {
-  return <h1>Hello, Dashboard Page!</h1>
+  return <Main />
 }

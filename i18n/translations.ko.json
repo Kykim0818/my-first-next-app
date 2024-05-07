@@ -1,0 +1,12 @@
+{
+  "home": {
+    "request_api": "요청 할 API",
+    "reset": "초기화",
+    "dashboard": "대시보드",
+    "data_retrieval": "데이터 가져오기"
+  },
+  "dashboard": {
+    "title": "안녕하세요, 대시보드 페이지!",
+    "go_home": "홈페이지로 돌아가기"
+  }
+}
