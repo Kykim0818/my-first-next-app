@@ -73,7 +73,7 @@ const VARIANTS = {
   `,
   secondary: css`
     color: #333;
-    background-color: transparent;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   `,
 }

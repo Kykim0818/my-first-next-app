@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const en = require('./translations.en.json')
 const de = require('./translations.de.json')
 const ko = require('./translations.ko.json')
