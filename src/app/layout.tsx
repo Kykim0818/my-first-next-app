@@ -1,6 +1,8 @@
 import StyledProvider from '@/app/StyledProvider'
+import TestNav from '@/components/navigate/TestNav'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Suspense } from 'react'
 import StoreProvider from './StoreProvider'
 
 export const metadata: Metadata = {
@@ -19,10 +21,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={myFont.className}>
+    <html lang="en" className={myFont.className}>
       <body>
         <StoreProvider>
-          <StyledProvider>{children}</StyledProvider>
+          <StyledProvider>
+            <Suspense>
+              <TestNav />
+              {children}
+            </Suspense>
+          </StyledProvider>
         </StoreProvider>
       </body>
     </html>

@@ -5,6 +5,7 @@
 import { Button } from '@/components/@common/Button/Button'
 import { actionUi } from '@/stores/features/ui/uiSlice'
 import { useAppDispatch, useAppSelector } from '@/stores/hooks'
+import { useTranslation } from 'next-export-i18n'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
@@ -16,6 +17,7 @@ export const Content = () => {
   const [apiUrl, setApiUrl] = useState(
     'https://jsonplaceholder.typicode.com/todos/1',
   )
+  const { t } = useTranslation()
   const handleFetchData = () => {
     fetch(apiUrl)
       .then((response) => response.json())
@@ -38,7 +40,9 @@ export const Content = () => {
 
   return (
     <div>
-      <span>요청할 API : {apiUrl}</span>
+      <span>
+        {t('home.request_api')} : {apiUrl}
+      </span>
       <div>
         <input
           value={apiUrl}
@@ -47,12 +51,16 @@ export const Content = () => {
         />
       </div>
       <div>
-        <Button primary label="데이터 가져오기" onClick={handleFetchData} />
-        <Button label="초기화" onClick={handleReset} />
+        <Button
+          primary
+          label={t('home.data_retrieval')}
+          onClick={handleFetchData}
+        />
+        <Button label={t('home.reset')} onClick={handleReset} />
         <Button label={theme} onClick={handleClickTheme} />
         <Button
           primary
-          label="대시보드"
+          label={t('home.dashboard')}
           onClick={() => router.push('/dashboard', { scroll: false })}
         />
       </div>

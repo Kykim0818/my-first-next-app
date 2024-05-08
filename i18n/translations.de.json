@@ -1,0 +1,12 @@
+{
+  "home": {
+    "request_api": "API zum Anfragen",
+    "reset": "Initialisierung",
+    "dashboard": "Dashboard",
+    "data_retrieval": "Datenabruf"
+  },
+  "dashboard": {
+    "title": "Hallo, Dashboard-Seite!",
+    "go_home": "Zurück zur Startseite"
+  }
+}
