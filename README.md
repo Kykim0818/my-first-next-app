@@ -1,5 +1,7 @@
 ## My First Next App (Export Static)
 
+Start Project! 🔥
+
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat&logo=Typescript&logoColor=white)
 ![](https://img.shields.io/badge/Next.js-000000?style=flat&logo=Next.js&logoColor=white)
 ![](https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=REACT&logoColor=black)
@@ -7,6 +9,18 @@
 ![](https://img.shields.io/badge/Jest-C21325?style=flat&logo=Jest&logoColor=white)
 ![](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white)
 ![](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=Redux&logoColor=white)
+
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Required](#required)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Start Project](#start-project)
+- [Test with Jest](#test-with-jest)
+- [Storybook](#storybook)
+- [Build](#build)
 
 ## Description
 
@@ -28,18 +42,6 @@
   export default nextConfig
   ```
 
-## Table of Contents
-
-- [Description](#description)
-- [Features](#features)
-- [Required](#required)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Start Project](#start-project)
-- [Test with Jest](#test-with-jest)
-- [Storybook](#storybook)
-- [Build](#build)
-
 ## Features
 
 - Next.js App Router 이용
@@ -48,27 +50,6 @@
 - 폴더 구조 구성
 - Storybook 초기 예제 코드 추가
 - Jest 예제 코드 추가
-
-## Install
-
-- npm 기준으로 package-lock.json이 포함되어 있습니다.
-
-```bash
-npm install
-```
-
-## Getting Started
-
-```bash
-// development 환경에서 실행
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 ## Required
 
@@ -81,7 +62,9 @@ bun dev
 
 - **npm** 기준으로 package-lock.json이 포함되어 있습니다.
 - npm 으로 버전 관리
-
+    ```bash
+    npm install
+    ```
 ### Start Project
 
 ```bash
