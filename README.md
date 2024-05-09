@@ -1,19 +1,36 @@
-### My First Next app
+## My first Next app boilerplate
 
-- Next 사용 및 숙달 테스트 목적
-- App Router 사용
-- Typescript
-- TODO: css - Styled-components
+## Description
 
----
+- Next 프레임워크를 사용한 프로젝트 초기 설정 목적
+- 재사용 목적
+- 현재 static build option 적용 (default : output 라인 삭제)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```mjs
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
+  output: 'export', // build 파일을 외부 static으로 뽑을 떄 추가하는 옵션, 미사용시 라인 주석 또는 제거 필요
+  compiler: {
+    styledComponents: true,
+  },
+}
+
+export default nextConfig
+```
+
+## Install
+
+- npm 기준으로 package-lock.json이 포함되어 있습니다.
+
+```bash
+npm install
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+// development 환경에서 실행
 npm run dev
 # or
 yarn dev
@@ -26,8 +43,6 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -43,3 +58,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+Licensed under the MIT License, Copyright © 2024
+
+See LICENSE for more information.
