@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "i18n/index.js"
+    "i18n/index.js",
+    "jest.setup.ts"
   ],
   "exclude": [
     "node_modules",
