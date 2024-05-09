@@ -1,7 +1,4 @@
 ## My First Next App (Export Static)
-
-Start Project! 🔥
-
 ![](https://img.shields.io/badge/Typescript-3178C6?style=flat&logo=Typescript&logoColor=white)
 ![](https://img.shields.io/badge/Next.js-000000?style=flat&logo=Next.js&logoColor=white)
 ![](https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=REACT&logoColor=black)
@@ -9,6 +6,10 @@ Start Project! 🔥
 ![](https://img.shields.io/badge/Jest-C21325?style=flat&logo=Jest&logoColor=white)
 ![](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white)
 ![](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=Redux&logoColor=white)
+
+Start Project! 🔥<br/>
+Go To [DEMO](https://my-first-next-app-export.vercel.app/)
+
 
 ## Table of Contents
 
